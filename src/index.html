@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productivity tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Productivity Tracker</h1>
+        <p>Time for some Deep Work!</p>
+    </header>
+
+    <div id="settings"class="settings">
+        <label>Session Length (minutes):</label>
+        <input id="duration-input" type="number" min="20" value="20" step="20" max="240">
+
+    </div>
+
+    <div class="timer-container">
+
+        <button id="start-button">Start</button>
+
+        <div id="timer-display" style="display: none;">
+        </div>
+
+        <button id="end-button" style="display: none;">End</button>
+
+        <p id="timer-end-message" style="display: none;"></p>
+
+        <button id="statistics-button" style="display: none">View Statistics</button>
+
+    </div>
+
+    <div id="statistics-overlay" class="statistics-overlay" style="display: none;">
+        <h2>Productivity Statistics</h2>
+        <div id="date-picker"></div>
+        <div id="sessions-summary"></div>
+        <div id="session-card-list"></div>
+    </div>
+
+</body>
+</html>
